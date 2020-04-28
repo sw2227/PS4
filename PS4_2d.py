@@ -16,7 +16,7 @@ Ki1 = 1.0;
 Ki2 = 1.0;
 Stot = 100;
 
-n = 190 #could not achieve a plot above this mesh number with my PC
+mesh = 190 #could not achieve a plot above this mesh number with my PC
 i1 = numpy.logspace(-2,3,num = n)
 i2 = numpy.logspace(-2,3,num = n)
 A = numpy.zeros((n,n))
