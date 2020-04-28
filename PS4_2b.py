@@ -16,16 +16,16 @@ Ki1 = 1.0;
 Ki2 = 1.0;
 Stot = 100;
 
-mesh = 190 #could not achieve a plot above this mesh number with my PC
-i1 = numpy.logspace(-2,3,num = n)
-i2 = numpy.logspace(-2,3,num = n)
-A = numpy.zeros((n,n))
-B = numpy.zeros((n,n))
-C = numpy.zeros((n,n))
+m = 190 #could not achieve a plot above this mesh number with my PC
+i1 = numpy.logspace(-2,3,num = m)
+i2 = numpy.logspace(-2,3,num = m)
+A = numpy.zeros((m,m))
+B = numpy.zeros((m,m))
+C = numpy.zeros((m,m))
 P = numpy.array([1,1,1])
-for x1 in range(n):
+for x1 in range(m):
     P = numpy.array([1,1,1])
-    for x2 in range(n):
+    for x2 in range(m):
         def with_inhibitor(E):
             A = E[0]
             B = E[1]
